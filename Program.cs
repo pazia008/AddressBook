@@ -74,9 +74,9 @@ namespace AddressBook
                     Console.WriteLine($"Email: {contact.Email}");
                     Console.WriteLine($"Address: {contact.Address}");
                 }
-                catch
+                catch (Exception ex)
                 {
-                    Console.WriteLine($"Could not find person with the email: {email}");
+                    Console.WriteLine($"{ex.Message}");
                     continue;
                 }
             }
